@@ -1,0 +1,12 @@
+<div class="" *ngIf="heroi">
+    <h2>Editando detalhes do herói</h2><h2 class="heroname">{{heroi.nome}}</h2>
+    <label for="id">id:</label><br>
+    <input id="id" [(ngModel)]="heroi.id" disabled="true"><br>
+    <label for="nome">Nome do(a) herói(na)</label><br>
+    <input id="nome" [(ngModel)]="heroi.nome" placeholder="nome"><br>
+    <label for="ataque">Poder de ataque do(a) herói(na)</label><br>
+    <input type="number" id="ataque" [(ngModel)]="heroi.ataque" placeholder="ataque" min="0" max="100"><br>
+    <label for="defesa">Poder de defesa do(a) herói(na)</label><br>
+    <input type="number" id="defesa" [(ngModel)]="heroi.defesa" placeholder="defesa" min="0" max="100"><br>
+    <button type="button" (click)="goBack()">go back</button>
+  </div>

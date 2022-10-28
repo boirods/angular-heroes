@@ -1,0 +1,15 @@
+.poderosos h2{
+  color: brown;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+.listaPoderosos{
+    list-style-type: none;
+    display: flex;
+}
+.listaPoderosos a{
+    display: flex;
+    flex-direction: row;
+}
