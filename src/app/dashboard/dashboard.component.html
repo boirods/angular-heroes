@@ -3,7 +3,7 @@
     <p>Segue a lista de curiosidades dos heróis e aqui você encontra a lista de 3 heróis com maiores poderes, os dois melhores de defesa e ataque, os dois com as piores defesas e ataques, e o melhor e pior poder.</p>
     <ul>
         <li *ngFor="let poderoso of poderosos" class="listaPoderosos">
-            <a routerLink="/detalhe/{{poderoso.id}}">
+            <a class="listLink" routerLink="/detalhe/{{poderoso.id}}">
                 <span>{{poderoso.id}}</span>
                 {{poderoso.nome}}
             </a>
@@ -11,21 +11,16 @@
     </ul>
     <div class="melhoresHeroi">
         <h3 class="strongerTitle">Melhores heróis</h3>
-        <p> E o herói de ATAQUE mais forte é o
-            <a routerLink="/detalhe/{{melhorAtaque.id}}">
-                {{melhorAtaque.nome}}</a>.<br/>E o herói de DEFESA mais forte é o
-                <a routerLink="/detalhe/{{melhorDefesa.id}}">
-                    {{melhorDefesa.nome}}
-                </a>.
+        <p class="desc"> E o herói de ATAQUE mais forte é o &nbsp;<a class="h" routerLink="/detalhe/{{melhorAtaque.id}}">{{melhorAtaque.nome}}</a>.<br/>E o herói de DEFESA mais forte é o <a class="h" routerLink="/detalhe/{{melhorDefesa.id}}">{{melhorDefesa.nome}}</a>.
         </p>
     </div>
     <div class="pioresDefHeroi">
         <h3 class="worstTitle">Piores heróis</h3>
-        <p>E o herói de ATAQUE mais forte é o <a routerLink="/detalhe/{{piorAtaque.id}}">{{piorAtaque.nome}}</a>.<br/>E o herói de DEFESA mais forte é o <a routerLink="/detalhe/{{piorDefesa.id}}">{{piorDefesa.nome}}</a>.</p>
+        <p>E o herói de ATAQUE mais forte é o <a class="h" routerLink="/detalhe/{{piorAtaque.id}}">{{piorAtaque.nome}}</a>.<br/>E o herói de DEFESA mais forte é o <a class="h" routerLink="/detalhe/{{piorDefesa.id}}">{{piorDefesa.nome}}</a>.</p>
     </div>
 
     <div class="maiorEMenorPoder">
         <h3 class="worstTitle">Maior e menor poderes</h3>
-        <p>E o herói de Poder mais forte é o <a routerLink="/detalhe/{{maiorPoder.id}}">{{maiorPoder.nome}}</a>.<br/>E o herói de Poder mais fraco é o <a routerLink="/detalhe/{{menorPoder.id}}">{{menorPoder.nome}}</a>.</p>
+        <p>E o herói de Poder mais forte é o <a class="h" routerLink="/detalhe/{{maiorPoder.id}}">{{maiorPoder.nome}}</a>.<br/>E o herói de Poder mais fraco é o <a class="h" routerLink="/detalhe/{{menorPoder.id}}">{{menorPoder.nome}}</a>.</p>
     </div>
 </div>

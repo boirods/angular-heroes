@@ -1,15 +1,42 @@
 .poderosos h2{
-  color: brown;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 2.5em;
-  font-weight: 100;
+    font-size: larger;
+    font-weight: 600;
+}
+.poderosos p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .listaPoderosos{
     list-style-type: none;
-    display: flex;
+    overflow: hidden;
 }
-.listaPoderosos a{
-    display: flex;
-    flex-direction: row;
+.listLink{
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 1px;
+    width: 100%;
+}
+.listLink span{
+    background-color: black;
+    padding: 4px;
+    color:white;
+}
+.h{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding:3px;
+}
+.desc{
+    line-height: 1.5em;
 }

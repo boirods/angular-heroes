@@ -1,0 +1,22 @@
+.herois{
+    margin:0;
+    padding: 0;
+}
+.herois li{
+    list-style-type: none;
+    overflow: hidden;
+}
+.herois li a{
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 1px;
+    width: 100%;
+}
+.herois li a span{
+    background-color: black;
+    color: white;
+    padding: 3px; 
+}
