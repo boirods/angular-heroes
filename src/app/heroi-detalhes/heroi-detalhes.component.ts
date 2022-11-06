@@ -25,6 +25,19 @@ export class HeroiDetalhesComponent implements OnInit {
     const id=Number(this.route.snapshot.paramMap.get('id'));
     this.heroService.getHeroi(id).subscribe(heroi => this.heroi = heroi);
   }
+
+  salvar():void{
+    if(this.heroi){
+      this.heroService.atualizaHeroi(this.heroi)
+        .subscribe(() => this.goBack());
+    }
+  }
+  
+  apagar(): void{
+    alert("Não será possível recuperar estes dados...")
+    
+  }
+
   goBack(): void {
     this.location.back();
   }
