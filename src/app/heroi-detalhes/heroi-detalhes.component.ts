@@ -33,9 +33,9 @@ export class HeroiDetalhesComponent implements OnInit {
     }
   }
   
-  apagar(): void{
-    alert("Não será possível recuperar estes dados...")
-    
+  apagar(heroi:Heroi): void{
+    this.heroService.apagaHeroi(heroi.id).subscribe();
+    this.location.back()
   }
 
   goBack(): void {

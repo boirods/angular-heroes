@@ -61,4 +61,13 @@ export class HeroiService {
       catchError(this.handleError<Heroi>('adicionaHeroi'))
     );
   }
+
+  apagaHeroi(id:Number):Observable<Heroi>{
+    const url = `${this.heroisUrl}/${id}`;
+
+    return this.http.delete<Heroi>(url, this.httpOptions).pipe(
+      tap(_ => this.log(`apagado o herói de id ${id}`)),
+      catchError(this.handleError<Heroi>('apagaHeroi'))
+    )
+  }
 }

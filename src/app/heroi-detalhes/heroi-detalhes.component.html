@@ -10,7 +10,7 @@
     <input class="field" type="number" id="ataque" [(ngModel)]="heroi.ataque" placeholder="ataque" min="0" max="100"><br>
     <label for="defesa">Poder de defesa do(a) herói(na)</label><br>
     <input class="field" type="number" id="defesa" [(ngModel)]="heroi.defesa" placeholder="defesa" min="0" max="100"><br>
-    <button class="deleteButton" type="button" (click)="apagar()">Apagar herói</button>
+    <button class="deleteButton" type="button" (click)="apagar(heroi)">Apagar herói</button>
     <button class="buttons" type="button" (click)="salvar()">Salvar dados</button>
   </div>
 </div>
