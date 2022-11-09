@@ -5,5 +5,6 @@
       <a routerLink="/detalhe/{{heroi.id}}"><span class="badge">{{heroi.id}}</span>{{heroi.nome}}</a>
     </li>
   </ul>
+  <button type="button" class="buttons" (click)='adicionaHeroi()'>Adicionar herói</button> 
 </div>
 <app-heroi-detalhes [heroi]="selectedHeroi"></app-heroi-detalhes>
